@@ -51,7 +51,7 @@ source ~/software/vpy35/bin/activate
 ```shell
 deactivate
 ```
-####2 相关依赖的安装
+#### 2 相关依赖的安装
 在使用虚拟环境的基础上，使用pip进行包的安装，以TensorFlow为例
 ```shell
 pip install tensorflow-gpu
