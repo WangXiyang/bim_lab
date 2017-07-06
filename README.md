@@ -41,7 +41,7 @@ virtualenv vpy35
 ```
 选择本地的python解释器
 ```shell
-virtualenv -p /home/dingzheng/software/python35/bin/python3.5
+virtualenv -p /home/dingzheng/software/python35/bin/python3.5 vpy35
 ```
 使用虚拟环境
 ```shell
