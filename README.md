@@ -30,19 +30,17 @@ tar -xzf Python-3.5.2.tgz
 ```shell
 cd Python-3.5.2/
 mkdir -p ~/software/python35
-./configure --prefix="/home/dingzheng/software/python35"
+./configure --prefix="/home/dingzheng/software/python35 " --enable-unicode=ucs4
 make
 make install
 ```
-创建虚拟环境
+创建虚拟环境并选择本地的python解释器
 ```shell
 cd ~/software
-virtualenv vpy35
+virtualenv vpy35 -p /home/dingzheng/software/python35/bin/python3.5
 ```
-选择本地的python解释器
-```shell
-virtualenv -p /home/dingzheng/software/python35/bin/python3.5 vpy35
-```
+**如果系统的Python和你的Python版本相同,一定要在创建虚拟环境时直接指定本地的Python解释器，不然会先复制一份系统的Python解释器，导致后续再指定本地Python解释器时出现问题。**
+
 使用虚拟环境
 ```shell
 source ~/software/vpy35/bin/activate
