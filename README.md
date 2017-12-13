@@ -30,7 +30,7 @@ tar -xzf Python-3.5.2.tgz
 ```shell
 cd Python-3.5.2/
 mkdir -p ~/software/python35
-./configure --prefix="/home/dingzheng/software/python35 " --enable-unicode=ucs4
+./configure --prefix="/home/wangxiyang/software/python35" --enable-unicode=ucs4
 make
 make install
 ```
